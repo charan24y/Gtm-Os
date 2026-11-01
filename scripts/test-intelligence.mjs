@@ -1,6 +1,6 @@
 import { TinyFish } from "@tiny-fish/sdk";
 
-const tf = new TinyFish({ apiKey: "sk-tinyfish-yvcGRabmg0NXiv37oouDpr2b0YpcavTq" });
+const tf = new TinyFish({ apiKey: process.env.TINYFISH_API_KEY });
 
 async function run() {
   console.log("--- 1. Testing live TinyFish fetch on https://resend.com ---");
